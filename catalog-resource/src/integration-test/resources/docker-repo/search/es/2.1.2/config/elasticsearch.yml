@@ -1,0 +1,21 @@
+network.host: 0.0.0.0
+http.port: 8200
+transport.tcp.port: 9300
+
+
+
+path.data: /usr/share/elasticsearch/data
+path.logs: /usr/share/elasticsearch/logs
+path.plugins: /usr/share/elasticsearch/plugins
+path.work: /usr/share/elasticsearch/work
+
+cluster.name: elastic-docker-test
+index.number_of_shards: 2
+index.number_of_replicas: 0
+
+
+node.master: true
+
+discovery.zen.ping.multicast.enabled: true
+#discovery.zen.ping.multicast.enabled: false
+#discovery.zen.ping.unicast.hosts: ["78.239.140.76:9300"]
